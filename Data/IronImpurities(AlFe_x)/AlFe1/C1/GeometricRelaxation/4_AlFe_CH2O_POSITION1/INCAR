@@ -1,0 +1,29 @@
+System: AlFe-CO binding-Geometric_relaxation
+LCHARG = .FALSE.
+LWAVE = .FALSE.
+LREAL = AUTO
+
+LDIPOL = .TRUE. # 5X5X5 Al slab, center of top slab was changed for Fe ion
+IDIPOL = 3      # along the z-axis 
+DIPOL = 0.5 0.5 0.5
+
+ALGO = Normal
+NCORE = 16 
+EDIFF = 1e-6    # electronic convergence 
+PREC = Accurate
+IBRION = 2      # Conjugate gradient algorithm
+
+NSW = 1000
+NELM = 1000
+EDIFFG = -0.01 # max forces: 0.05eV/AA
+ENCUT =  600    # keep ENCUT from a_0 optimization
+SIGMA = 0.050000
+ISMEAR = 0      # Gaussian smearing
+ISPIN = 2       # binding molecules
+MAGMOM = 112*0.0 1*2.3 12*0.0
+
+## BEEF-vdW
+GGA = BF
+LUSE_VDW = .TRUE. 
+Zab_VDW = -1.8867
+LBEEFENS=.TRUE.

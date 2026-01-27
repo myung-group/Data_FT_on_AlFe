@@ -1,0 +1,32 @@
+System: AlFe-CO binding-Al_Environment_Geometric_relaxation
+LCHARG = .FALSE.
+LWAVE = .FALSE.
+LREAL = AUTO
+
+LDIPOL = .TRUE.
+IDIPOL = 3        # along the z-axis 
+DIPOL = 0.5 0.5 0.5
+
+ALGO = Normal
+NCORE = 16 
+EDIFF = 1e-6      # electronic convergence 
+PREC = Accurate
+IBRION = 2        # Conjugate gradient algorithm
+# IBRION = 5      # Think about vibration
+# POTIM = 0.02    # turn on IBRION, so each ion to calculate the Hessian Matrix.
+
+
+NSW = 1000
+NELM = 1000
+EDIFFG = -0.01    # max forces: 0.1eV/AA
+ENCUT =  600      # keep ENCUT from a_0 optimization
+SIGMA = 0.050000
+ISMEAR = 0        # Gaussian smearing
+ISPIN = 2
+
+## BEEF-vdW
+GGA = BF 
+LUSE_VDW = .TRUE. 
+Zab_VDW = -1.8867
+LBEEFENS=.TRUE.
+
