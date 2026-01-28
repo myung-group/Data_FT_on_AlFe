@@ -18,7 +18,7 @@ This repository accompanies the paper:
 
 ### 💾 Output Data
 If you want to check your calculation, please visit our output data of the project.
-* **Zenodo Link:** [Insert Link Here](---)
+* **Zenodo Link:** [[Click here to access](https://doi.org/10.5281/zenodo.18396033])]
 
 ---
 
